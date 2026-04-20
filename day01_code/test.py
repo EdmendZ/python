@@ -7,44 +7,7 @@
     @IDE      : PyCharm
     @Description: 
 """
-# 1. 布尔值 False
-if False:
-    print("不会执行")
-else:
-    print("1. False 是假")
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-# 2. 空值 None
-if None:
-    print("不会执行")
-else:
-    print("2. None 是假")
-
-# 3. 数字 0 (包括整数、浮点数)
-if 0:
-    print("不会执行")
-else:
-    print("3. 数字 0 是假")
-
-if 0.0:
-    print("不会执行")
-else:
-    print("4. 浮点数 0.0 也是假")
-
-# 5. 空字符串
-if "":
-    print("不会执行")
-else:
-    print("5. 空字符串是假")
-
-# 6. 空列表、空字典、空元组
-if []:
-    print("不会执行")
-else:
-    print("6. 空列表是假")
-
-if {}:
-    print("不会执行")
-else:
-    print("7. 空字典是假")
-
-
+print(f"切片[5::-1]范围: {nums[5::-1]}")
+print(f"切片[5:-1:-1]范围: {nums[5:-1:-1]}")
