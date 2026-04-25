@@ -8,6 +8,7 @@
     @Description: 
 """
 
+
 # 题1：文件读取、字符串拆分
 # 任务： 编写函数 count_words_in_file(filename)，读取指定文本文件，返回文件中的总单词数（单词以空格等分隔）。
 # 示例： 假设 test.txt 内容如下，则函数返回 4。
@@ -16,7 +17,10 @@ def count_words_in_file(filename):
         content = f.read()
         words = content.split()
         return len(words)
+
+
 print(count_words_in_file("a.txt"))
+
 
 # 题2：文件写入、字典操作
 # 任务： 编写函数 save_contacts(contacts, filename)，将通讯录字典（键为姓名，值为电话）保存到文件中，
@@ -24,7 +28,10 @@ def save_contacts(contacts, filename):
     with open(filename, 'w', encoding='utf-8') as f:
         for name, phone in contacts.items():
             f.write(f"{name}:{phone}\n")
+
+
 print(save_contacts({"sfafa": "21fea", "21fea": "777247", "56ggh": "56ggh"}, "b.txt"))
+
 
 # 题3：文件逐行读取、字符串处理
 # 任务： 有一个日志文件 log.txt，每行格式为 时间 - 级别 - 消息，例如 2023-01-01 10:00 - ERROR - Disk full。
@@ -49,4 +56,6 @@ def count_log_levels(filename):
                 _, level, _ = line.split(" - ")
                 levels[level] += 1
         return levels
+
+
 print(count_log_levels("log.txt"))
