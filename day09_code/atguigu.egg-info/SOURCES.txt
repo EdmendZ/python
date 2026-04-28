@@ -1,0 +1,8 @@
+sourcecodedistribution.py
+atguigu.egg-info/PKG-INFO
+atguigu.egg-info/SOURCES.txt
+atguigu.egg-info/dependency_links.txt
+atguigu.egg-info/top_level.txt
+sdis/__init__.py
+sdis/exercise1.py
+sdis/exercise2.py
